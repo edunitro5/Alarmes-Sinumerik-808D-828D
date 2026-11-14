@@ -144,7 +144,7 @@ function mostrar(n, reg) {
   o.appendChild(el("div", "big", n + " → " + d.addr));
   const dl = el("dl"), L = [];
   if (tx) { L.push(["Texto", tx[0]]); if (tx[1]) L.push(["Tradução", tx[1]]); if (tx[2]) L.push(["Origem", tx[2]]); }
-  else L.push(["Texto", "definido pelo programador da máquina (não consta no manual)"]);
+  else L.push(["Texto", "Definido pelo programador da máquina (não consta no manual)"]);
   L.push(["Faixa", d.ext ? "estendido (só 828D)" : "usuário padrão (" + ctrl + ")"], ["Bit de ativação", d.addr], ["Configuração", d.config], ["Variável do texto", d.vari || "não confirmada no manual"]);
   const md = lerMd($("md").value);
   if (md === "erro") L.push(["Reação", "valor do MD14516 inválido (0 a 255, 0x.. ou ..h)"]);
